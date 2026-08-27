@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--fonte-principal);
+    
+    width: 100%;
+    min-height: 100%;
+}
+
+:root{
+    --cor-fundo: #F7F3FA;
+    --cor-fundo-secundario: #EDE5F2;
+    --cor-lilas: #B58AD9;
+    --cor-roxo: #7B4BA8;
+    --cor-roxo-escuro: #4B285F;
+    --cor-texto: #29252D;
+    --cor-texto-claro: #FFFFFF;
+    --cor-destaque: #E8DDF0;
+    --cor-borda: #D8C9E0;
+    --cor-sombra: rgba(75, 40, 95, 0.15);
+    --cor-erro: #C94A5A;
+    --cor-sucesso: #5E9C76;
+
+    --fonte-principal: 'Poppins', sans-serif;
+}
