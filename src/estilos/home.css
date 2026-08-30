@@ -122,7 +122,7 @@
     font-weight: 400;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
 
     .fundo-container::before, .fundo-container::after {
         display: none;
@@ -168,35 +168,3 @@
         font-size: 0.65rem;
     }
 }
-
-@media (min-width: 601px) and (max-width: 900px){
-
-    .info-home h1,
-    .info-home h2 {
-        font-size: 3.2rem;
-    }
-
-    .info-home p {
-        font-size: 1em;
-    }
-
-
-    .fundo-container::before {
-        width: 320px;
-        height: 320px;
-
-        top: -170px;
-        right: -100px;
-    }
-
-
-    .fundo-container::after {
-        width: 220px;
-        height: 220px;
-
-        bottom: -140px;
-        left: -90px;
-    }
-}
-
-

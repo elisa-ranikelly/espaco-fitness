@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+.container-catalogo{
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+.cabecalho-catalogo{
+    position: relative;
+}
+
+.link-carrinho{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--cor-texto-claro);
+    background-color: var(--cor-roxo-escuro);
+    text-align: center;
+    width: 150px;
+    gap: 5px;
+    height: 32px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.136);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-carrinho {
+    width: 20px;
+    height: 15px;
+}
+
+.catalogo-titulo h1{
+    text-align: center;
+    font-size: 2.1em;
+    color: var(--cor-roxo-escuro);
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.busca{
+    display: flex;
+    justify-content: center;
+}
+
+.filtro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 0 20px;
+    margin-right: 40px;
+}
+
+.filtro select{
+    width: 200px;
+    height: 37px;
+    background-color: var(--cor-borda);
+    color: var(--cor-roxo-escuro);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.136);
+    outline: none;
+    border: 1px solid var(--cor-roxo-escuro);
+
+    cursor: pointer;
+}
+
+.filtro > select > option{
+    text-align: center;
+    color: var(--cor-roxo-escuro);
+}
+
+.catalogo-produtos{
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: space-evenly;
+}
+
+.msg-nao-encontrado{
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 40px;
+    color: #707070;
+}
+
+@media (max-width: 600px) {
+
+    .container-catalogo{
+        overflow: visible;
+    }
+
+    .link-carrinho{
+        width: 80px;
+        right: 20px;
+        font-size: 0.7em;
+    }
+
+    .busca{
+        justify-content: space-between;
+    }
+
+    .filtro select{
+        width: 100px;
+        font-size: 0.8em;
+    }
+
+    .catalogo-titulo h1{
+        margin-top: 20px;
+        font-size: 1.2em;
+        letter-spacing: 0px;
+    }
+
+    .catalogo-produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .link-carrinho{
+        width: 92px;
+        font-size: 0.8em;
+        right: 30px;
+    }
+
+
+    .catalogo-titulo h1{
+        margin-top: 20px;
+        font-size: 1.3em;
+        letter-spacing: 0px;
+    }
+
+    .catalogo-produtos{
+        display: grid;
+        grid-template-columns: repeat(3, 180px);
+    }
+}

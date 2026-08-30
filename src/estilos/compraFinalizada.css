@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+.compra-finalizada-container{
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+.lista-produtos{
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto;
+    border: 2px solid var(--cor-borda);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.informacoes{
+    margin: 30px;
+    border-bottom: 2px solid var(--cor-borda);
+
+}
+
+.informacoes h2{
+    font-size: 1em;
+}
+
+.informacoes p{
+    font-size: 0.9em;
+}
+
+.link-voltar-loja{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.link-voltar-loja a{
+    text-decoration: none;
+    font-size: 0.9em;
+
+    background-color: var(--cor-roxo-escuro);
+    width: 150px;
+    height: 40px;
+
+    color: var(--cor-texto-claro);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+@media (max-width: 600px){
+    .lista-produtos{
+        width: 70%;
+        max-width: 600px;
+    }
+
+
+    .informacoes h2{
+        font-size: 0.9em;
+    }
+
+    .informacoes p{
+        font-size: 0.7em;
+    }
+
+    .link-voltar-loja a{
+        font-size: 0.8em;
+
+        background-color: var(--cor-roxo-escuro);
+        width: 140px;
+        height: 40px;
+    }
+
+}

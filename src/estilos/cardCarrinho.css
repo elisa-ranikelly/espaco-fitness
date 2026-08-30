@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+.card-carrinho{
+    display: flex;
+    margin: 30px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.100);
+    width: 500px;
+    min-height: 200px;
+}
+
+.checkbox-carrinho{
+    margin-left: 10px;
+}
+
+.card-carrinho img{
+    height: 200px;
+    padding: 10px 0;
+    width: 180px;
+    object-fit: contain;
+}
+
+.info-carrinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.info-carrinho h2{
+    color: var(--cor-roxo-escuro);
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.info-carrinho p{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    color: var(--cor-texto);
+}
+
+.card-carrinho-quantidade{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.btn-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.btn-menos, .btn-mais{
+    width: 23px;
+    height: 23px;
+    border: 1px solid var(--cor-roxo-escuro);
+    border-radius: 3px;
+    color: var(--cor-roxo-escuro);
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.remover-carrinho{
+    width: 200px;
+    margin-top: 10px;
+}
+
+button.btn-remover {
+    padding: 10px;
+    border: 1px solid rgb(138, 39, 39);
+    border-radius: 5px;
+    background-color: var(--cor-fundo);
+    color: rgb(138, 39, 39);
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+button.btn-remover:hover{
+    background-color: rgb(138, 39, 39);
+    border: 1px solid var(--cor-texto-claro);
+    color: var(--cor-texto-claro);
+}
+
+@media (max-width: 600px) {
+
+    .card-carrinho{
+        margin: 20px;
+        width: 300px;
+        min-height: 200px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .card-carrinho img{
+        height: 130px;
+        width: 150px;
+    }
+
+    .info-carrinho h2{
+        font-size: 0.7em;
+    }
+
+    .info-carrinho p{
+        font-size: 0.6em;
+    }
+
+    .remover-carrinho{
+        width: 150px;
+    }
+
+    button.btn-remover {
+        font-size: 0.6em;
+    }
+}
