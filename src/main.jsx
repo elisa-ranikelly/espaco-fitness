@@ -7,7 +7,7 @@ import { CarrinhoProvider } from './context/CarrinhoContext';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter  basename="/espaco-fitness">
       <CarrinhoProvider>
         <App />
       </CarrinhoProvider>
