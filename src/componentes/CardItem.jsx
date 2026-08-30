@@ -6,7 +6,7 @@ function CardItem({ product}){
         <Link to={`/detalhes-produto/${product.id}`} className="link-detalhes-produto">
             <div className="card-itens">
             
-                <img src={product.imagem} alt={product.titulo} className="img-produto"/>
+                <img src={`${import.meta.env.BASE_URL}${product.imagem.replace(/^\//, "")}`} alt={product.titulo} className="img-produto"/>
                 <div className="info-catalogo">
                     <h2>{product.titulo}</h2>
                     <p>Cor: {product.cor}</p>
