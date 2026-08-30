@@ -20,7 +20,7 @@ function DetalheProduto(){
     useEffect(() => {
         async function carregarProduto() {
             try{
-                const response = await fetch("/products.json");
+                const response = await fetch(`${import.meta.env.BASE_URL}products.json`);
                 const data = await response.json();
                 const resul = data.produtos.find(product => product.id === idNumerico);
 
