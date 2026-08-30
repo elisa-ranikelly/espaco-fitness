@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+.detalhe-produto-container{
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+.detalhe-produto{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    margin-top: 50px;
+    padding: 0 30px 60px;
+}
+
+.img-detalhe{
+    max-width: 300px;
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.img-detalhe img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
+}
+
+.info-detalhes{
+    width: 400px;
+    padding-top: 30px;
+}
+
+.info-detalhes h1{
+    color: var(--cor-roxo);
+    font-weight: 800;
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+.info-detalhes h2{
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--cor-roxo-escuro);
+
+    margin: 0 0 30px;
+}
+
+.info-item{
+    margin-bottom: 22px;
+}
+
+.info-item p{
+    margin: 0;
+}
+
+.info-item p:first-child{
+    font-size: 0.95em;
+    font-weight: bold;
+    color: var(--cor-roxo-escuro);
+    margin-bottom: 6px;
+}
+
+.info-item p:last-child{
+    font-size: 0.75em;
+    color: var(--cor-texto);
+}
+
+.tamanhos{
+    display: flex;
+    gap: 6px;
+    margin-top: 5px;
+}
+
+.tamanhos button{
+    padding: 8px 11px;
+
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--cor-roxo);
+
+    background-color: transparent;
+    color: var(--cor-texto);
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tamanhos button.tamanho-selecionado{
+    background-color: var(--cor-roxo-escuro);
+    color: var(--cor-texto-claro);
+}
+
+.tamanhos button:hover{
+    background-color: var(--cor-roxo-escuro);
+    color: var(--cor-texto-claro);
+}
+
+.tamanhos button:disabled {
+    background-color: #ddd;
+    color: #888;
+    border-color: #bbb;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.info-item .p-especial{
+    font-size: 0.7em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--cor-roxo-escuro);
+}
+
+.descricao{
+    font-size: 0.8em;
+    max-width: 500px;
+    min-height: 50px;
+    line-height: 1.5;
+}
+
+.quant-btn-adicionar{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.quantidade{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+}
+
+.quantidade button{
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--cor-roxo);
+
+    background-color: transparent;
+    color: var(--cor-texto);
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.p-quantidade{
+    margin: 0;
+    min-width: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 25px;
+}
+
+.btn-adicionar{
+    height: 40px;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-roxo-escuro);
+
+    outline: none;
+    border-radius: 8px;
+    border: none;
+
+    color: var(--cor-texto-claro);
+
+    cursor: pointer;
+}
+
+.icone-adicionar{
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .detalhe-produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .img-detalhe{
+        max-width: 200px;
+        min-height: 50px; 
+    }
+
+    .info-detalhes{
+        width: 100%;
+        max-width: 400px;
+        padding: 0;
+    }
+
+    .info-detalhes h1{
+        font-size: 1.1em;
+    }
+
+    .info-detalhes h2{
+        font-size: 1em;
+    }
+
+    .info-item p:first-child{
+        margin-bottom: 4px;
+    }
+
+    .tamanhos button{
+        padding: 6px 9px;
+    }
+
+    .quantidade{
+        gap: 0px;
+    }
+
+    .quant-btn-adicionar{
+        justify-content: space-between;
+    }
+
+    .btn-adicionar{
+        height: 35px;
+        width: 200px;
+
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+    .detalhe-produto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        gap: 50px;
+
+        margin: 50px auto 0;
+        padding: 0 40px 50px;
+    }
+
+    .info-detalhes{
+        width: 380px;
+    }
+}
