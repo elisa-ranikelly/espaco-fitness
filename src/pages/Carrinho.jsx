@@ -61,14 +61,17 @@ function Carrinho(){
                         );
                     })}
                 </div>
+                {carrinho.length > 0 ? (
+                    <div className="detalhes-compra">
+                        <h1>Resumo do Pedido</h1>
+                        <p>Total de itens: {quantProdutos}</p>
+                        <p>Total: R$ {total.toFixed(2)}</p>
 
-                <div className="detalhes-compra">
-                    <h1>Resumo do Pedido</h1>
-                    <p>Total de itens: {quantProdutos}</p>
-                    <p>Total: R$ {total.toFixed(2)}</p>
-
-                    <button className="btn-finalizar" onClick={finalizarCompra}>{compra ? "Finalizando..." : "Finalizar Compra"}</button>
-                </div>
+                        <button className="btn-finalizar" onClick={finalizarCompra}>{compra ? "Finalizando..." : "Finalizar Compra"}</button>
+                    </div>
+                ) : (
+                    <p className="msg-nao-encontrado">Seu carrinho está vazio.</p>
+            )}
             </div>
         </div>
     );
