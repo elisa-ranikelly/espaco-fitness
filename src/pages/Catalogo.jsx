@@ -16,7 +16,7 @@ function Catalogo(){
     useEffect(() => {
         async function carregarProdutos() {
             try{
-                const response = await fetch("/products.json");
+                const response = await fetch(`${import.meta.env.BASE_URL}products.json`);
                 const data = await response.json();
 
                 if(data.length === 0){
