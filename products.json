@@ -1,0 +1,139 @@
+{   
+    "produtos": [
+        {
+            "id": 1,
+            "titulo": "Conjunto top + short",
+            "categoria": "Conjuntos",
+            "preco": 79.99,
+            "cor": "Preto",
+            "descricao": "Conjunto preto com top e short duplo.",
+            "tamanhos": ["P", "M", "G", "GG"],
+            "quantidade": {
+                "P": 25,
+                "M": 35,
+                "G": 30,
+                "GG": 30
+            },
+            "imagem": "/roupas-catalogo/conjunto-preto.jpg"
+        },
+
+        {
+            "id": 2,
+            "titulo": "Conjunto top + short",
+            "categoria": "Conjuntos",
+            "preco": 59.99,
+            "cor": "Laranja",
+            "descricao": "Conjunto laranja com top e short no tecido poliamida gramatura 320.",
+            "tamanhos": ["P", "M", "G", "GG"],
+            "quantidade": {
+                "P": 25,
+                "M": 35,
+                "G": 30,
+                "GG": 30
+            },
+            "imagem": "/roupas-catalogo/conjunto-laranja.jpg"
+        },
+        
+        {   
+            "id": 3,
+            "titulo": "Conjunto completo",
+            "categoria": "Conjuntos",
+            "preco": 179.99,
+            "cor": "Cinza",
+            "descricao": "Conjunto completo com top, calça e casaco.",
+            "tamanhos": ["P", "M", "G", "GG"],
+            "quantidade": {
+                "P": 25,
+                "M": 35,
+                "G": 30,
+                "GG": 30
+            },
+            "imagem": "/roupas-catalogo/conjunto-completo.jpg"
+        },
+
+        {   
+            "id": 4,
+            "titulo": "Conjunto top + calça",
+            "categoria": "Conjuntos",
+            "preco": 139.99,
+            "cor": "Rosa pink",
+            "descricao": "Conjunto com top e calça.",
+            "tamanhos": ["P", "M", "G", "GG"],
+            "quantidade": {
+                "P": 25,
+                "M": 35,
+                "G": 30,
+                "GG": 30
+            },
+            "imagem": "/roupas-catalogo/conjunto-rosa.jpg"
+        },
+
+        {   
+            "id": 5,
+            "titulo": "Conjunto top + calça",
+            "categoria": "Conjuntos",
+            "preco": 99.99,
+            "cor": "Cinza e rosa",
+            "descricao": "Conjunto com top e calça.",
+            "tamanhos": ["P", "M", "G", "GG"],
+            "quantidade": {
+                "P": 25,
+                "M": 35,
+                "G": 30,
+                "GG": 30
+            },
+            "imagem": "/roupas-catalogo/conjunto-rosa-cinza.jpg"
+        },
+            
+        {
+            "id": 6,
+            "titulo": "Macacão",
+            "categoria": "Macacão",
+            "preco": 139.99,
+            "cor": "Verde",
+            "descricao": "Macação.",
+            "tamanhos": ["P", "M", "G", "GG"],
+            "quantidade": {
+                "P": 25,
+                "M": 35,
+                "G": 30,
+                "GG": 30
+            },
+            "imagem": "/roupas-catalogo/macacao-verde.jpg"
+        },
+        
+        {
+            "id": 7,
+            "titulo": "Macaquinho",
+            "categoria": "Macaquinho",
+            "preco": 79.99,
+            "cor": "Laranja",
+            "descricao": "Macaquinho laranja no tecido poliamida.",
+            "tamanhos": ["P", "M", "G", "GG"],
+            "quantidade": {
+                "P": 25,
+                "M": 35,
+                "G": 30,
+                "GG": 30
+            },
+            "imagem": "/roupas-catalogo/macaquinho-laranja.jpg"
+        },
+            
+        {
+            "id": 8,
+            "titulo": "Regata básica",
+            "categoria": "Regatas",
+            "preco": 39.99,
+            "cor": "Preto",
+            "descricao": "Regata básica no tecido frio.",
+            "tamanhos": ["P", "M", "G", "GG"],
+            "quantidade": {
+                "P": 25,
+                "M": 35,
+                "G": 30,
+                "GG": 30
+            },
+            "imagem": "/roupas-catalogo/regata-preta.jpg"
+        }
+    ]
+}
