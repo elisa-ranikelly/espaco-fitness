@@ -36,24 +36,6 @@
 }
 
 
-.fundo-container::after {
-    content: "";
-
-    position: absolute;
-
-    width: 280px;
-    height: 280px;
-
-    border: 2px solid var(--cor-lilas);
-
-    border-radius: 50%;
-
-    bottom: -180px;
-    left: -100px;
-
-    opacity: 0.35;
-}
-
 .info-home{
     display: flex;
     flex-direction: column;
@@ -124,7 +106,7 @@
 
 @media (max-width: 1024px) {
 
-    .fundo-container::before, .fundo-container::after {
+    .fundo-container::before {
         display: none;
     }
 
