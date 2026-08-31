@@ -107,7 +107,7 @@ function CardCarrinho({product}){
                 onChange={marcarComoSelecionado}
                 checked={product.selecionado}/>
 
-            <img src={product.imagem} alt={product.titulo}/>
+            <img src={`${import.meta.env.BASE_URL}${product.imagem.replace(/^\//, "")}`} alt={product.titulo}/>
 
             <div className="info-carrinho">
 

@@ -156,7 +156,7 @@ function DetalheProduto(){
             <div className="detalhe-produto">
 
                 <div className="img-detalhe">
-                    <img src={produtoSelecionado.imagem} alt={produtoSelecionado.titulo} />
+                    <img src={`${import.meta.env.BASE_URL}${produtoSelecionado.imagem.replace(/^\//, "")}`} alt={produtoSelecionado.titulo} />
                 </div>
 
                 <div className="info-detalhes">
