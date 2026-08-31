@@ -70,7 +70,9 @@ function Carrinho(){
                         <button className="btn-finalizar" onClick={finalizarCompra}>{compra ? "Finalizando..." : "Finalizar Compra"}</button>
                     </div>
                 ) : (
-                    <p className="msg-nao-encontrado">Seu carrinho está vazio.</p>
+                    <div className="msg-carrinho-vazio">
+                        <p className="msg-nao-encontrado">Seu carrinho está vazio.</p>
+                    </div>
             )}
             </div>
         </div>
