@@ -7,6 +7,7 @@ import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Carrinho from "./pages/Carrinho";
 import CompraRealizada from "./pages/CompraRealizada";
+import ComoFiz from "./pages/ComoFiz";
 
 
 function App(){
@@ -18,6 +19,7 @@ function App(){
         <Route path="/detalhes-produto/:id" element={<DetalheProduto />} />
         <Route path="/carrinho" element={<Carrinho />} />
         <Route path="/compra-realizada" element={<CompraRealizada />} />
+        <Route path="/como-fiz" element={<ComoFiz />} />
       </Routes>
       
       <ToastContainer>
