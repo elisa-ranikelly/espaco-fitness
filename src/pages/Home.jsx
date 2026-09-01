@@ -22,6 +22,7 @@ function Home(){
 
             <div className="rodape">
                 <p>2026 - Espaço fitness. Todos os direitos reservados</p>
+                <p><Link className="link-como-fiz" to="/como-fiz">Como fiz</Link></p>
             </div>
         </div>
     );
